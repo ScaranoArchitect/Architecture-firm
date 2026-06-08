@@ -1,0 +1,2083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Modern Architectural Design & Zoning Experts | Brooklyn Studio</title>
+    <meta name="description" content="Maximize space and unlock building envelope potential. Our professional architectural studio specializes in high-density multi-family designs, zoning forensics, and seamless building department clearances.">
+    
+    <meta name="keywords" content="architectural design, zoning experts brooklyn, building department clearance, space optimization, commercial architects, multi-family development blueprints">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Modern Architectural Design & Zoning Experts | Brooklyn Studio">
+    <meta property="og:description" content="Maximize space and unlock building envelope potential. Our professional architectural studio specializes in high-density multi-family designs, zoning forensics, and seamless building department clearances.">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Modern Architectural Design & Zoning Experts | Brooklyn Studio">
+    <meta name="twitter:description" content="Maximize space and unlock building envelope potential. Our professional architectural studio specializes in high-density multi-family designs, zoning forensics, and seamless building department clearances.">
+</head>
+    <style>
+        /* --- GLOBAL RESET & VARIABLES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --true-black: #08090a;
+            --card-overlay: rgba(17, 19, 21, 0.65);
+            --border-gray: rgba(255, 255, 255, 0.08);
+            --text-pure: #ffffff;
+            --text-silver: #a3a8ac;
+            --accent-cyan: #00d2ff;
+            --accent-blue: #0066ff;
+            --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --header-height: 90px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-family: var(--font-stack);
+            background-color: var(--true-black);
+            color: var(--text-pure);
+        }
+
+        body {
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- WINDOW FRIENDLY NAVIGATION HUB --- */
+        .scarano-navigation-hub {
+            background-color: rgba(8, 9, 10, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-gray);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .nav-matrix-layout {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: var(--header-height);
+        }
+
+        .nav-brand-asset {
+            display: flex;
+            align-items: center;
+        }
+
+        .brand-logo-img {
+            max-height: 50px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .nav-links-wrapper {
+            display: flex;
+            gap: max(2vw, 20px); /* Fluid window scaling gap */
+        }
+
+        .nav-matrix-link {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-silver);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: color 0.25s ease;
+            white-space: nowrap;
+        }
+
+        .nav-matrix-link:hover {
+            color: var(--text-pure);
+        }
+
+        .nav-matrix-link .matrix-prefix {
+            color: var(--accent-cyan);
+            font-weight: 700;
+            font-size: 0.75rem;
+            margin-right: 4px;
+        }
+
+        .nav-action-btn {
+            background: transparent;
+            color: var(--text-pure);
+            border: 1px solid var(--border-gray);
+            padding: 12px 24px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            white-space: nowrap;
+        }
+
+        .nav-action-btn:hover {
+            border-color: var(--accent-cyan);
+            background-color: rgba(0, 210, 255, 0.03);
+        }
+
+        /* --- BULLETPROOF WINDOW-FRIENDLY HERO PANEL --- */
+        .scarano-hero-panel {
+            min-height: 100vh;
+            /* Combines flexible padding to protect short height windows from text clipping */
+            padding-top: calc(var(--header-height) + 60px);
+            padding-bottom: 60px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-image: url('https://fhi.nl/app/uploads/2024/06/Afbeelding-GA-2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Dynamic layered darkening masks */
+        .hero-vignette-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(8,9,10,0.95) 0%, rgba(8,9,10,0.8) 50%, rgba(8,9,10,0.5) 100%);
+            z-index: 1;
+        }
+
+        .geometric-blueprint-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 50px 50px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .hero-container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 3;
+        }
+
+        /* Fluid Content Architecture Box */
+        .hero-content-stack {
+            max-width: 720px;
+            width: 100%;
+            background-color: var(--card-overlay);
+            border: 1px solid var(--border-gray);
+            padding: min(50px, 5vw); /* Responsive internal padding */
+            border-radius: 12px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .hero-context-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--border-gray);
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+
+        .pulse-node {
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-cyan);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .tag-text {
+            color: var(--text-silver);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+
+        .hero-main-heading {
+            /* Safely clamps heading sizing between 2.2rem and 4.2rem based on window stretch */
+            font-size: clamp(2.2rem, 4.5vw, 4.2rem);
+            font-weight: 900;
+            color: var(--text-pure);
+            line-height: 1.15;
+            letter-spacing: -1.5px;
+            margin: 0 0 24px 0;
+        }
+
+        .hero-main-heading .highlight-blueprint {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-lead-paragraph {
+            font-size: clamp(1rem, 1.2vw, 1.15rem);
+            color: var(--text-silver);
+            line-height: 1.7;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .hero-primary-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            color: var(--text-pure);
+            border: none;
+            padding: 18px 36px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 8px 24px rgba(0, 102, 255, 0.25);
+            transition: all 0.25s ease;
+            white-space: nowrap;
+        }
+
+        .hero-primary-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(0, 102, 255, 0.4);
+        }
+
+        /* --- STABLE WINDOW RESPONSIVE BREAKPOINTS --- */
+        @media (max-width: 1100px) {
+            .nav-container, .hero-container { padding: 0 24px; }
+            .hero-vignette-mask {
+                background: rgba(8, 9, 10, 0.85); /* Darkens slightly more when layout wraps */
+            }
+        }
+
+        @media (max-width: 950px) {
+            .nav-links-wrapper {
+                gap: 16px;
+            }
+            .nav-matrix-link {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 820px) {
+            /* Drops navigation links cleanly into a mobile ready posture before overlapping occurs */
+            .nav-links-wrapper, .nav-action-block { display: none; }
+            .nav-matrix-layout { justify-content: center; }
+            .hero-content-stack {
+                max-width: 100%;
+                text-align: center;
+            }
+            .hero-context-tag {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="scarano-navigation-hub">
+        <div class="nav-container">
+            <div class="nav-matrix-layout">
+                
+                <a href="#home" class="nav-brand-asset">
+                    <img src="https://scaranoarchitect.wordpress.com/wp-content/uploads/2026/01/image.png?w=120&h=96&allow_lossy=1" alt="SCARANO ARCHITECT Logo" class="brand-logo-img">
+                </a>
+
+                <nav class="nav-links-wrapper">
+                    <a href="#about" class="nav-matrix-link"><span class="matrix-prefix"></span> About</a>
+                    <a href="#services" class="nav-matrix-link"><span class="matrix-prefix"></span> Services</a>
+                    <a href="#reviews" class="nav-matrix-link"><span class="matrix-prefix"></span> Reviews</a>
+                    <a href="#contact" class="nav-matrix-link"><span class="matrix-prefix"></span> Contact</a>
+                </nav>
+                <div class="nav-action-block">
+                    <a href="#contact" class="nav-action-btn">Initiate Briefing</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="scarano-hero-panel">
+        <div class="hero-vignette-mask"></div>
+        <div class="geometric-blueprint-overlay"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content-stack">
+                <div class="hero-context-tag">
+                    <span class="pulse-node"></span>
+                    <span class="tag-text">SCARANO ARCHITECT</span>
+                </div>
+                
+                <h1 class="hero-main-heading">
+                    Challenging Geometry.<br>
+                    Shaping <span class="highlight-blueprint">Urban Form.</span>
+                </h1>
+                
+                <p class="hero-lead-paragraph">
+                    We specialize in innovative, award-winning <a href="https://maps.app.goo.gl/skspUPaggwqDD87v5">architectural designs</a> that maximize structural space and elevate urban landscapes. From zoning expertise to final execution, our work reshapes multi-family, commercial, and adaptive reuse properties with unmatched structural ingenuity.
+                </p>
+                
+                <div class="hero-routing-channels">
+                    <a href="#contact" class="hero-primary-btn">Explore Portfolio Designs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+<section id="about" class="scarano-about-panel">
+        <div class="about-blueprint-overlay"></div>
+        <div class="about-container">
+            <div class="about-grid-layout">
+                
+                <div class="about-asset-frame">
+                    <div class="blueprint-spec-box">
+                        <div class="corner-crosshair spec-tl"></div>
+                        <div class="corner-crosshair spec-tr"></div>
+                        <div class="corner-crosshair spec-bl"></div>
+                        <div class="corner-crosshair spec-br"></div>
+                        
+                        <div class="about-img-wrapper">
+                            <img src="https://i.pinimg.com/736x/2a/9d/b7/2a9db708a715b7dd8e89cbdb02cf05d1.jpg" alt="SCARANO ARCHITECT Structural Drafting Matrix" class="about-showcase-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content-stack">
+                    <div class="about-section-tag">
+                        <span class="tag-accent-line"></span>
+                        <span class="tag-label-text">Design Philosophy</span>
+                    </div>
+                    
+                    <h2 class="about-main-heading">
+                        Maximizing Space.<br>
+                        Elevating <span class="highlight-blueprint">Zoning Value.</span>
+                    </h2>
+                    
+                    <p class="about-body-paragraph">
+                        At SCARANO ARCHITECT, we approach structural creation and architectural design as a rigorous balancing act between pioneering geometric innovation and strict municipal compliance in Brooklyn, NY. Our practice has established a distinguished legacy of transforming spatial constraints into design opportunities through <a href="https://scaranoarchitect.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: inherit;">zoning analysis</a>, adaptive reuse, building additions, and innovative architectural planning.
+                    </p>
+                    
+                    <p class="about-body-paragraph">
+                        We push beyond conventional aesthetics. By systematically dissecting complex urban codes and leveraging technical envelope mechanics, our studios consistently produce award-winning structures that deliver enhanced programmatic density, environmental efficiency, and enduring civic value.
+                    </p>
+
+                    <div class="about-stats-matrix">
+                        <div class="stat-card">
+                            <span class="stat-number">NYC</span>
+                            <span class="stat-desc">Zoning Experts</span>
+                        </div>
+                        <div class="stat-indicator-line"></div>
+                        <div class="stat-card">
+                            <span class="stat-number">Award</span>
+                            <span class="stat-desc">Winning Designs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* --- ABOUT PANEL STYLE CONFIGURATIONS --- */
+        .scarano-about-panel {
+            background-color: var(--true-black);
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .about-blueprint-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 50px 50px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .about-container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-grid-layout {
+            display: grid;
+            grid-template-columns: 0.95fr 1.05fr;
+            gap: max(5vw, 40px);
+            align-items: center;
+        }
+
+        /* Technical Image Framing Architecture */
+        .blueprint-spec-box {
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 16px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.01);
+        }
+
+        .corner-crosshair {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            border-color: var(--accent-cyan);
+            border-style: solid;
+            opacity: 0.5;
+        }
+        .spec-tl { top: -3px; left: -3px; border-width: 1px 0 0 1px; }
+        .spec-tr { top: -3px; right: -3px; border-width: 1px 1px 0 0; }
+        .spec-bl { bottom: -3px; left: -3px; border-width: 0 0 1px 1px; }
+        .spec-br { bottom: -3px; right: -3px; border-width: 0 1px 1px 0; }
+
+        .about-img-wrapper {
+            border-radius: 4px;
+            overflow: hidden;
+            aspect-ratio: 1 / 1.1;
+            background-color: var(--card-black);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+        }
+
+        .about-showcase-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: contrast(1.05) brightness(0.95);
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .blueprint-spec-box:hover .about-showcase-img {
+            transform: scale(1.04);
+        }
+
+        /* Content Text Stack Architecture */
+        .about-section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .tag-accent-line {
+            width: 24px;
+            height: 1px;
+            background-color: var(--accent-cyan);
+        }
+
+        .tag-label-text {
+            color: var(--accent-cyan);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .about-main-heading {
+            font-size: clamp(2rem, 3.8vw, 3.2rem);
+            font-weight: 900;
+            color: var(--text-pure);
+            line-height: 1.2;
+            letter-spacing: -1px;
+            margin: 0 0 28px 0;
+        }
+
+        .about-main-heading .highlight-blueprint {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .about-body-paragraph {
+            font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+            color: var(--text-silver);
+            line-height: 1.75;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .about-body-paragraph:last-of-type {
+            margin-bottom: 36px;
+        }
+
+        /* Spacially Balanced Metrics Matrix */
+        .about-stats-matrix {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            background-color: var(--card-black);
+            border: 1px solid var(--border-gray);
+            padding: 24px 32px;
+            border-radius: 6px;
+            width: fit-content;
+        }
+
+        .stat-card {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .stat-number {
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: var(--text-pure);
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .stat-desc {
+            font-size: 0.75rem;
+            color: var(--text-silver);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .stat-indicator-line {
+            width: 1px;
+            height: 40px;
+            background-color: var(--border-gray);
+        }
+
+        /* --- STABLE WINDOW RESPONSIVE BREAKPOINTS --- */
+        @media (max-width: 1200px) {
+            .about-container { padding: 0 24px; }
+            .about-grid-layout { gap: 40px; }
+        }
+
+        @media (max-width: 1024px) {
+            .about-grid-layout {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+            .about-asset-frame {
+                max-width: 550px;
+                margin: 0 auto;
+                width: 100%;
+            }
+            .about-content-stack {
+                text-align: center;
+            }
+            .about-section-tag {
+                justify-content: center;
+            }
+            .about-stats-matrix {
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .scarano-about-panel {
+                padding: 80px 0;
+            }
+            .about-stats-matrix {
+                flex-direction: column;
+                width: 100%;
+                gap: 20px;
+                padding: 24px;
+            }
+            .stat-indicator-line {
+                width: 40px;
+                height: 1px;
+            }
+        }
+    </style>
+    <section id="services" class="scarano-services-panel">
+        <div class="services-blueprint-overlay"></div>
+        
+        <div class="services-container">
+            
+            <div class="services-section-header">
+                <div class="services-context-tag">
+                    <span class="matrix-node"></span>
+                    <span class="tag-text">Core Capabilities // Operations Matrix</span>
+                </div>
+                <h2 class="services-main-heading">Operational <br><span class="highlight-blueprint">Deployment Vectors</span></h2>
+                <p class="services-lead-text">
+                    From navigating dense urban zoning restrictions to conceptualizing groundbreaking spaces, we deliver end-to-end design protocols.
+                </p>
+            </div>
+
+            <div class="services-grid-matrix">
+                
+                <div class="service-vector-card">
+                    <div class="card-geometric-corner"></div>
+                    <div class="service-meta-header">
+                        <span class="service-index">01//</span>
+                        <div class="service-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="service-svg-icon">
+                                <path d="M3 3h18v4H7v14H3V3z" />
+                                <path d="M7 7h14v4H11v10H7V7z" opacity="0.3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <h3 class="service-title">Architects</h3>
+                    <p class="service-description">
+                        Pioneering high-density structural systems and adaptive frameworks. Our architectural unit executes detailed programmatic mappings, schematic formulations, and precision envelope drafting engineered for complex urban layers.
+                    </p>
+                    
+                    <div class="service-card-footer">
+                        <span class="technical-spec-label">Execution Status: Precision Master</span>
+                    </div>
+                </div>
+
+                <div class="service-vector-card">
+                    <div class="card-geometric-corner"></div>
+                    <div class="service-meta-header">
+                        <span class="service-index">02//</span>
+                        <div class="service-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="service-svg-icon">
+                                <path d="M12 2v4M12 6L7 22M12 6l5 16M9 17h6" />
+                                <circle cx="12" cy="4" r="1" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <h3 class="service-title">Designers</h3>
+                    <p class="service-description">
+                        Curating avant-garde interior volumes, environmental layout matrices, and spatial ergonomics. We seamlessly merge material physics with fluid spatial layouts to maximize programmatic workflow performance.
+                    </p>
+                    
+                    <div class="service-card-footer">
+                        <span class="technical-spec-label">Execution Status: Aesthetic Master</span>
+                    </div>
+                </div>
+
+                <div class="service-vector-card">
+                    <div class="card-geometric-corner"></div>
+                    <div class="service-meta-header">
+                        <span class="service-index">03//</span>
+                        <div class="service-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="service-svg-icon">
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <path d="M16 2v4M8 2v4M4 11h16M8 15h4" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <h3 class="service-title">Building Department</h3>
+                    <p class="service-description">
+                        Mastering municipal bureaucracy, deep zoning forensic review, code variances, and multi-agency plan verification. We systematically clear structural pathways for swift regulatory deployment and compliance checks.
+                    </p>
+                    
+                    <div class="service-card-footer">
+                        <span class="technical-spec-label">Execution Status: Clearance Master</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* --- SERVICES PANEL STYLE CONFIGURATIONS --- */
+        .scarano-services-panel {
+            background-color: #0c0e10; /* Slightly distinct variation of dark for layered sectioning */
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .services-blueprint-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 50px 50px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.008) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.008) 1px, transparent 1px);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .services-container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Section Header Layout */
+        .services-section-header {
+            max-width: 680px;
+            margin-bottom: 72px;
+        }
+
+        .services-context-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-gray);
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .services-context-tag .matrix-node {
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-cyan);
+            border-radius: 2px; /* Square technical node */
+        }
+
+        .services-main-heading {
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            font-weight: 900;
+            color: var(--text-pure);
+            line-height: 1.15;
+            letter-spacing: -1px;
+            margin-bottom: 24px;
+        }
+
+        .services-main-heading .highlight-blueprint {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .services-lead-text {
+            font-size: 1.1rem;
+            color: var(--text-silver);
+            line-height: 1.7;
+        }
+
+        /* Fluid Window-Friendly Grid Framework */
+        .services-grid-matrix {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            align-items: stretch;
+        }
+
+        /* Premium Minimalist Service Card Architecture */
+        .service-vector-card {
+            background-color: rgba(17, 19, 21, 0.5);
+            border: 1px solid var(--border-gray);
+            padding: 48px 40px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        /* Stylized Blueprint Angle Accent on Hover */
+        .card-geometric-corner {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 16px 16px 0;
+            border-color: transparent var(--border-gray) transparent transparent;
+            transition: border-color 0.35s ease;
+        }
+
+        .service-vector-card:hover {
+            border-color: var(--accent-cyan);
+            background-color: rgba(17, 19, 21, 0.8);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 210, 255, 0.03);
+        }
+
+        .service-vector-card:hover .card-geometric-corner {
+            border-color: transparent var(--accent-cyan) transparent transparent;
+        }
+
+        /* Meta Top Row Layout */
+        .service-meta-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
+
+        .service-index {
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: var(--accent-cyan);
+            letter-spacing: 1px;
+        }
+
+        .service-icon-wrapper {
+            color: var(--text-silver);
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-gray);
+            border-radius: 6px;
+            transition: all 0.35s ease;
+        }
+
+        .service-svg-icon {
+            width: 22px;
+            height: 22px;
+            transition: stroke 0.35s ease;
+        }
+
+        .service-vector-card:hover .service-icon-wrapper {
+            color: var(--text-pure);
+            border-color: rgba(0, 210, 255, 0.3);
+            background-color: rgba(0, 210, 255, 0.05);
+        }
+
+        /* Typography & Content Layout */
+        .service-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--text-pure);
+            margin: 0 0 16px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .service-description {
+            font-size: 0.95rem;
+            color: var(--text-silver);
+            line-height: 1.65;
+            margin: 0 0 40px 0;
+            flex-grow: 1; /* Ensures text aligns perfectly across uneven descriptions */
+        }
+
+        /* Technical Specification Bottom Strip */
+        .service-card-footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            padding-top: 20px;
+        }
+
+        .technical-spec-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: rgba(255, 255, 255, 0.3);
+            font-weight: 700;
+            display: block;
+            transition: color 0.35s ease;
+        }
+
+        .service-vector-card:hover .technical-spec-label {
+            color: var(--accent-cyan);
+        }
+
+        /* --- STABLE WINDOW RESPONSIVE BREAKPOINTS --- */
+        @media (max-width: 1200px) {
+            .services-container { padding: 0 24px; }
+            .services-grid-matrix { gap: 24px; }
+            .service-vector-card { padding: 40px 32px; }
+        }
+
+        @media (max-width: 1024px) {
+            .services-grid-matrix {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .services-section-header {
+                max-width: 100%;
+                text-align: center;
+            }
+            .services-context-tag {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .scarano-services-panel { padding: 80px 0; }
+            .services-grid-matrix {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .services-section-header {
+                margin-bottom: 48px;
+            }
+        }
+    </style>
+    <section class="scarano-reasoning-panel">
+        <div class="reasoning-blueprint-overlay"></div>
+        
+        <div class="reasoning-container">
+            <div class="reasoning-grid-layout">
+                
+                <div class="reasoning-content-stack">
+                    <div class="reasoning-context-tag">
+                        <span class="matrix-node-cross"></span>
+                        <span class="tag-text">Performance Calibration</span>
+                    </div>
+                    
+                    <h2 class="reasoning-main-heading">
+                        Engineered to Navigate<br>
+                        Complex <span class="highlight-blueprint">Urban Realities.</span>
+                    </h2>
+                    
+                    <p class="reasoning-lead-paragraph">
+                        We don't just draft structures; we solve spatial puzzles. Choosing SCARANO ARCHITECT means deploying a highly disciplined technical team that transforms complex local code into uncompromised square footage through <a href="https://www.google.com/search?kgmid=/g/11wwmcgpd9" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: inherit;">building code consulting</a> and strategic architectural planning in Brooklyn, NY.
+                    </p>
+
+                    <div class="reasoning-pipeline">
+                        
+                        <div class="pipeline-node-row">
+                            <div class="node-indicator">
+                                <span class="node-dot"></span>
+                            </div>
+                            <div class="node-text-block">
+                                <h4 class="node-title">Zoning Code Forensics</h4>
+                                <p class="node-desc">We master the technicalities of municipal zoning, unlocking hidden building envelope potential where conventional designs stall.</p>
+                            </div>
+                        </div>
+
+                        <div class="pipeline-node-row">
+                            <div class="node-indicator">
+                                <span class="node-dot"></span>
+                            </div>
+                            <div class="node-text-block">
+                                <h4 class="node-title">Advanced Spatial Math</h4>
+                                <p class="node-desc">Every square inch is rigorously calculated to achieve optimal programmatic flow, structural safety, and high financial asset valuation.</p>
+                            </div>
+                        </div>
+
+                        <div class="pipeline-node-row">
+                            <div class="node-indicator">
+                                <span class="node-dot"></span>
+                            </div>
+                            <div class="node-text-block">
+                                <h4 class="node-title">Streamlined Project Agency</h4>
+                                <p class="node-desc">Our deeply established direct clearance pipelines handle multi-department approvals efficiently to keep your development timeline secure.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="reasoning-metrics-frame">
+                    <div class="metrics-grid">
+                        
+                        <div class="metric-blueprint-box">
+                            <div class="box-crosshair tl"></div><div class="box-crosshair tr"></div>
+                            <div class="box-crosshair bl"></div><div class="box-crosshair br"></div>
+                            <span class="metric-big-number">100%</span>
+                            <h4 class="metric-title">Zoning Compliance</h4>
+                            <p class="metric-desc">Flawless project clearance record across complex multi-family sectors.</p>
+                        </div>
+
+                        <div class="metric-blueprint-box featured-blue">
+                            <div class="box-crosshair tl"></div><div class="box-crosshair tr"></div>
+                            <div class="box-crosshair bl"></div><div class="box-crosshair br"></div>
+                            <span class="metric-big-number">Award</span>
+                            <h4 class="metric-title">Winning Status</h4>
+                            <p class="metric-desc">Recognized architectural excellence that reshapes regional skylines.</p>
+                        </div>
+
+                        <div class="metric-blueprint-box">
+                            <div class="box-crosshair tl"></div><div class="box-crosshair tr"></div>
+                            <div class="box-crosshair bl"></div><div class="box-crosshair br"></div>
+                            <span class="metric-big-number">Max</span>
+                            <h4 class="metric-title">Space Optimization</h4>
+                            <p class="metric-desc">Systematically multiplying structural spatial efficiency profiles.</p>
+                        </div>
+
+                        <div class="metric-blueprint-box">
+                            <div class="box-crosshair tl"></div><div class="box-crosshair tr"></div>
+                            <div class="box-crosshair bl"></div><div class="box-crosshair br"></div>
+                            <span class="metric-big-number">End-to-End</span>
+                            <h4 class="metric-title">Studio Execution</h4>
+                            <p class="metric-desc">Seamless routing from architectural blueprint to agency hand-off.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* --- REASONING PANEL STYLE CONFIGURATIONS --- */
+        .scarano-reasoning-panel {
+            background-color: var(--true-black);
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .reasoning-blueprint-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 50px 50px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .reasoning-container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .reasoning-grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: max(5vw, 40px);
+            align-items: center;
+        }
+
+        /* Content Structure Left Block */
+        .reasoning-context-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-gray);
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+
+        .matrix-node-cross {
+            width: 8px;
+            height: 8px;
+            position: relative;
+        }
+        .matrix-node-cross::before, .matrix-node-cross::after {
+            content: '';
+            position: absolute;
+            background-color: var(--accent-cyan);
+        }
+        .matrix-node-cross::before { top: 3px; left: 0; width: 8px; height: 2px; }
+        .matrix-node-cross::after { top: 0; left: 3px; width: 2px; height: 8px; }
+
+        .reasoning-main-heading {
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            font-weight: 900;
+            color: var(--text-pure);
+            line-height: 1.15;
+            letter-spacing: -1px;
+            margin-bottom: 24px;
+        }
+
+        .reasoning-main-heading .highlight-blueprint {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .reasoning-lead-paragraph {
+            font-size: 1.1rem;
+            color: var(--text-silver);
+            line-height: 1.7;
+            margin-bottom: 48px;
+        }
+
+        /* Structural Pipeline Layout System */
+        .reasoning-pipeline {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            border-left: 1px dashed var(--border-gray);
+            padding-left: 28px;
+            margin-left: 4px;
+        }
+
+        .pipeline-node-row {
+            position: relative;
+        }
+
+        .node-indicator {
+            position: absolute;
+            left: -33px;
+            top: 6px;
+            background-color: var(--true-black);
+            padding: 4px 0;
+        }
+
+        .node-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--border-gray);
+            border-radius: 50%;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .pipeline-node-row:hover .node-dot {
+            background-color: var(--accent-cyan);
+            box-shadow: 0 0 8px var(--accent-cyan);
+        }
+
+        .node-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-pure);
+            margin: 0 0 8px 0;
+        }
+
+        .node-desc {
+            font-size: 0.95rem;
+            color: var(--text-silver);
+            line-height: 1.6;
+        }
+
+        /* Right Side Metric Blueprint Blocks Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .metric-blueprint-box {
+            background-color: rgba(17, 19, 21, 0.4);
+            border: 1px solid var(--border-gray);
+            padding: 40px 32px;
+            border-radius: 6px;
+            position: relative;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            transition: all 0.3s ease;
+        }
+
+        .metric-blueprint-box.featured-blue {
+            background-color: rgba(0, 102, 255, 0.02);
+            border-color: rgba(0, 102, 255, 0.2);
+        }
+
+        .metric-blueprint-box:hover {
+            border-color: var(--accent-cyan);
+            background-color: rgba(17, 19, 21, 0.7);
+            transform: translateY(-2px);
+        }
+
+        /* Crosshair nodes mimicking design drafting schematics */
+        .box-crosshair {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-color: rgba(255,255,255,0.15);
+            border-style: solid;
+            transition: border-color 0.3s ease;
+        }
+        .tl { top: -3px; left: -3px; border-width: 1px 0 0 1px; }
+        .tr { top: -3px; right: -3px; border-width: 1px 1px 0 0; }
+        .bl { bottom: -3px; left: -3px; border-width: 0 0 1px 1px; }
+        .br { bottom: -3px; right: -3px; border-width: 0 1px 1px 0; }
+
+        .metric-blueprint-box:hover .box-crosshair {
+            border-color: var(--accent-cyan);
+        }
+
+        .metric-big-number {
+            font-size: clamp(1.8rem, 3vw, 2.6rem);
+            font-weight: 900;
+            color: var(--text-pure);
+            display: block;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .featured-blue .metric-big-number {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .metric-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-pure);
+            margin: 0 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .metric-desc {
+            font-size: 0.85rem;
+            color: var(--text-silver);
+            line-height: 1.5;
+        }
+
+        /* --- STABLE WINDOW RESPONSIVE BREAKPOINTS --- */
+        @media (max-width: 1200px) {
+            .reasoning-container { padding: 0 24px; }
+            .metric-blueprint-box { padding: 32px 24px; }
+        }
+
+        @media (max-width: 1024px) {
+            .reasoning-grid-layout {
+                grid-template-columns: 1fr;
+                gap: 64px;
+            }
+            .reasoning-content-stack {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .scarano-reasoning-panel { padding: 80px 0; }
+            .metrics-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+    </style>
+    <section id="contact" class="scarano-cta-panel">
+        <div class="cta-blueprint-overlay"></div>
+        
+        <div class="cta-container">
+            <div class="cta-content-hull">
+                
+                <div class="cta-coordinates-block">
+                    <div class="cta-context-tag">
+                        <span class="matrix-node-pulse"></span>
+                        <span class="tag-text">Global Channels // Communications Matrix</span>
+                    </div>
+                    
+                    <h2 class="cta-main-heading">
+                        Initiate Structural <br>
+                        <span class="highlight-blueprint">Briefing Protocols.</span>
+                    </h2>
+                    
+                    <p class="cta-lead-text">
+                        Ready to extract maximum programmatic space parameters from your site envelope? Connect directly with our Brooklyn headquarters to deploy our zoning and design assets onto your next commercial or residential project.
+                    </p>
+
+                    <div class="coordinates-matrix-channels">
+                        
+                        <div class="channel-coordinate-item">
+                            <div class="channel-icon-hub">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="channel-svg">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="channel-meta-data">
+                                <span class="channel-label">Brooklyn Studio HQ</span>
+                                <span class="channel-value">110 York St 5th Floor, Brooklyn, NY 11201</span>
+                            </div>
+                        </div>
+
+                        <div class="channel-coordinate-item">
+                            <div class="channel-icon-hub">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="channel-svg">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                                </svg>
+                            </div>
+                            <div class="channel-meta-data">
+                                <span class="channel-label">Direct Secure Voice Line</span>
+                                <a href="tel:7185415565" class="channel-link">(718) 541-5565</a>
+                            </div>
+                        </div>
+
+                        <div class="channel-coordinate-item">
+                            <div class="channel-icon-hub">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="channel-svg">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div class="channel-meta-data">
+                                <span class="channel-label">Secure Information Terminal</span>
+                                <a href="mailto:info@ScaranoArchitect.com" class="channel-link">info@ScaranoArchitect.com</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* --- CTA PANEL STYLE CONFIGURATIONS --- */
+        .scarano-cta-panel {
+            background-color: #0c0e10;
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .cta-blueprint-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 50px 50px;
+            background-image: linear-gradient(to right, rgba(0, 210, 255, 0.005) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 210, 255, 0.005) 1px, transparent 1px);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .cta-container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Cleaned Centered Frame Hull */
+        .cta-content-hull {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(17, 19, 21, 0.4);
+            border: 1px solid var(--border-gray);
+            padding: min(60px, 6vw);
+            border-radius: 12px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+        }
+
+        .cta-coordinates-block {
+            width: 100%;
+        }
+
+        /* Content Header Aesthetics */
+        .cta-context-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-gray);
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+
+        .matrix-node-pulse {
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-cyan);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-cyan);
+        }
+
+        .cta-main-heading {
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            font-weight: 900;
+            color: var(--text-pure);
+            line-height: 1.15;
+            letter-spacing: -1px;
+            margin-bottom: 24px;
+        }
+
+        .cta-main-heading .highlight-blueprint {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cta-lead-text {
+            font-size: 1.1rem;
+            color: var(--text-silver);
+            line-height: 1.7;
+            margin-bottom: 48px;
+        }
+
+        /* Channels Coordinate Matrix Systems Layout */
+        .coordinates-matrix-channels {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            border-top: 1px dashed var(--border-gray);
+            padding-top: 40px;
+        }
+
+        .channel-coordinate-item {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .channel-icon-hub {
+            color: var(--accent-cyan);
+            background-color: rgba(0, 210, 255, 0.05);
+            border: 1px solid rgba(0, 210, 255, 0.15);
+            width: 48px;
+            height: 48px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .channel-coordinate-item:hover .channel-icon-hub {
+            background-color: rgba(0, 210, 255, 0.1);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.15);
+        }
+
+        .channel-svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .channel-meta-data {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .channel-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-silver);
+            font-weight: 700;
+        }
+
+        .channel-value {
+            font-size: 1.05rem;
+            color: var(--text-pure);
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .channel-link {
+            font-size: 1.05rem;
+            color: var(--text-pure);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.25s ease;
+        }
+
+        .channel-link:hover {
+            color: var(--accent-cyan);
+        }
+
+        /* --- STABLE WINDOW RESPONSIVE BREAKPOINTS --- */
+        @media (max-width: 1200px) {
+            .cta-container { padding: 0 24px; }
+        }
+
+        @media (max-width: 768px) {
+            .scarano-cta-panel { padding: 80px 0; }
+            .channel-coordinate-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+            .channel-value, .channel-link {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+    <section id="reviews" class="scarano-reviews-panel">
+        <div class="reviews-blueprint-overlay"></div>
+        
+        <div class="reviews-container">
+            
+            <div class="reviews-section-header">
+                <div class="reviews-context-tag">
+                    <span class="matrix-node-diamond"></span>
+                    <span class="tag-text">Project Logs // Client Verification</span>
+                </div>
+                <h2 class="reviews-main-heading">Structural <br><span class="highlight-blueprint">Delivery Feedback</span></h2>
+                <p class="reviews-lead-text">
+                    Read how our zoning forensic strategies and spatial execution help developers and property owners maximize physical value across New York.
+                </p>
+            </div>
+
+            <div class="reviews-grid-matrix">
+                
+                <div class="review-report-card">
+                    <div class="review-card-header">
+                        <div class="rating-stars-row">
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                        </div>
+                        <span class="verification-badge">Verified Client Log</span>
+                    </div>
+
+                    <p class="review-body-text">
+                        "SCARANO ARCHITECT completely overhauled our spatial expectations for a multi-family plot in Brooklyn. Their deep, forensic understanding of municipal zoning regulations allowed us to secure building footprint parameters that other firms claimed were impossible."
+                    </p>
+
+                    <div class="review-card-footer">
+                        <div class="client-meta-info">
+                            <strong class="client-name">Marcus Visten</strong>
+                            <span class="client-project-scope"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-report-card">
+                    <div class="review-card-header">
+                        <div class="rating-stars-row">
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                        </div>
+                        <span class="verification-badge">Verified Client Log</span>
+                    </div>
+
+                    <p class="review-body-text">
+                        "The technical precision and unique aesthetic layout delivered by their design studio transformed our commercial facility asset. They merged raw structural geometry with highly efficient programmatic workflows seamlessly."
+                    </p>
+
+                    <div class="review-card-footer">
+                        <div class="client-meta-info">
+                            <strong class="client-name">D. Aztec</strong>
+                            <span class="client-project-scope"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-report-card">
+                    <div class="review-card-header">
+                        <div class="rating-stars-row">
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                            <span class="star-vector">★</span>
+                        </div>
+                        <span class="verification-badge">Verified Client Log</span>
+                    </div>
+
+                    <p class="review-body-text">
+                        "Navigating building department clearance pathing can stall out development frameworks for months. Their building department division handled complex code clearances directly and kept our build entirely on timeline."
+                    </p>
+
+                    <div class="review-card-footer">
+                        <div class="client-meta-info">
+                            <strong class="client-name">S. Mehmood</strong>
+                            <span class="client-project-scope"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* --- REVIEWS PANEL STYLE CONFIGURATIONS --- */
+        .scarano-reviews-panel {
+            background-color: var(--true-black);
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .reviews-blueprint-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 50px 50px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.008) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.008) 1px, transparent 1px);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .reviews-container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Section Header Layout */
+        .reviews-section-header {
+            max-width: 680px;
+            margin-bottom: 72px;
+        }
+
+        .reviews-context-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-gray);
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .reviews-context-tag .matrix-node-diamond {
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-cyan);
+            transform: rotate(45deg); /* Diamond geometric marker */
+        }
+
+        .reviews-main-heading {
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            font-weight: 900;
+            color: var(--text-pure);
+            line-height: 1.15;
+            letter-spacing: -1px;
+            margin-bottom: 24px;
+        }
+
+        .reviews-main-heading .highlight-blueprint {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .reviews-lead-text {
+            font-size: 1.1rem;
+            color: var(--text-silver);
+            line-height: 1.7;
+        }
+
+        /* Fluid Grid Framework */
+        .reviews-grid-matrix {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            align-items: stretch;
+        }
+
+        /* Report Log Card Architecture */
+        .review-report-card {
+            background-color: rgba(17, 19, 21, 0.4);
+            border: 1px solid var(--border-gray);
+            padding: 40px 36px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .review-report-card:hover {
+            border-color: rgba(0, 210, 255, 0.4);
+            background-color: rgba(17, 19, 21, 0.7);
+            transform: translateY(-2px);
+        }
+
+        /* Top Row Card Header Details */
+        .review-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 28px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+            padding-bottom: 16px;
+        }
+
+        .rating-stars-row {
+            color: var(--accent-cyan);
+            display: flex;
+            gap: 2px;
+            font-size: 0.9rem;
+        }
+
+        .verification-badge {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-gray);
+            padding: 4px 10px;
+            border-radius: 2px;
+            font-weight: 700;
+        }
+
+        .review-report-card:hover .verification-badge {
+            color: var(--accent-cyan);
+            border-color: rgba(0, 210, 255, 0.2);
+            background-color: rgba(0, 210, 255, 0.02);
+        }
+
+        /* Body Review Statement */
+        .review-body-text {
+            font-size: 0.95rem;
+            color: var(--text-silver);
+            line-height: 1.7;
+            font-style: italic;
+            margin: 0 0 32px 0;
+            flex-grow: 1; /* Aligns cards neatly across uneven text heights */
+        }
+
+        /* Card Footer Data Details */
+        .review-card-footer {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .client-meta-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .client-name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-pure);
+            letter-spacing: -0.3px;
+        }
+
+        .client-project-scope {
+            font-size: 0.75rem;
+            color: var(--text-silver);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* --- STABLE WINDOW RESPONSIVE BREAKPOINTS --- */
+        @media (max-width: 1200px) {
+            .reviews-container { padding: 0 24px; }
+            .reviews-grid-matrix { gap: 24px; }
+            .review-report-card { padding: 32px 24px; }
+        }
+
+        @media (max-width: 1024px) {
+            .reviews-grid-matrix {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .reviews-section-header {
+                max-width: 100%;
+                text-align: center;
+            }
+            .reviews-context-tag {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .scarano-reviews-panel { padding: 80px 0; }
+            .reviews-grid-matrix {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .reviews-section-header {
+                margin-bottom: 48px;
+            }
+        }
+    </style>
+    <footer class="scarano-footer-panel">
+        <div class="footer-blueprint-overlay"></div>
+        
+        <div class="footer-container">
+            <div class="footer-matrix-grid">
+                
+                <div class="footer-brand-column">
+                    <div class="footer-logo-wrap">
+                        <img src="https://scaranoarchitect.wordpress.com/wp-content/uploads/2026/01/image.png?w=120&h=96&allow_lossy=1" alt="SCARANO ARCHITECT Logo" class="footer-brand-logo">
+                    </div>
+                    <p class="footer-brand-moto">
+                        Challenging traditional envelopes. Elevating spatial value through advanced zoning code forensics and pioneering geometry designs.
+                    </p>
+                </div>
+
+                <div class="footer-cta-column">
+                    <h4 class="footer-block-heading">Get Info</h4>
+                    <p class="footer-cta-text">
+                        110 York St 5th Floor,<br> 
+                        Brooklyn, NY 11201
+                    </p>
+                    <div class="footer-contact-links-wrap">
+                        <a href="tel:7185415565" class="footer-inline-contact">(718) 541-5565</a>
+                        <a href="mailto:info@ScaranoArchitect.com" class="footer-inline-contact">info@ScaranoArchitect.com</a>
+                    </div>
+                </div>
+
+                <div class="footer-nav-column">
+                    <h4 class="footer-block-heading">Important Links</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="#home" class="footer-routing-link"><span class="nav-index">//</span> Home Base</a></li>
+                        <li><a href="#about" class="footer-routing-link"><span class="nav-index">//</span> About Us</a></li>
+                        <li><a href="#services" class="footer-routing-link"><span class="nav-index">//</span> Core Services</a></li>
+                        <li><a href="#reviews" class="footer-routing-link"><span class="nav-index">//</span> Client Reviews</a></li>
+                        <li><a href="#contact" class="footer-routing-link"><span class="nav-index">//</span> Contact Terminal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-map-column">
+                    <h4 class="footer-block-heading"></h4>
+                    <div class="footer-map-envelope">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97962945!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4a6b2e3d2b28bb73%3A0xabbb0e6ed1d7c069!2sScarano%20Architect!5e0!3m2!1sen!2s!4v1780935898254!5m2!1sen!2s" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-base-strip">
+                <span class="copyright-label">© 2026 SCARANO ARCHITECT. All Spatial Parameters Reserved.</span>
+                <span class="credit-attribution-line">
+                    Engineered & Optimized by <a href="https://therankinggeeks.ai/" target="_blank" rel="noopener noreferrer" class="ranking-geeks-anchor">The Ranking Geeks</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* --- FOOTER PANEL STYLE CONFIGURATIONS --- */
+        .scarano-footer-panel {
+            background-color: #08090a;
+            padding: 80px 0 30px 0;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid var(--border-gray);
+        }
+
+        .footer-blueprint-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 50px 50px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.005) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.005) 1px, transparent 1px);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .footer-container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* 4-Column Balanced Grid Architecture */
+        .footer-matrix-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr 0.9fr 1fr;
+            gap: max(3vw, 30px);
+            padding-bottom: 60px;
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .footer-block-heading {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-pure);
+            margin: 0 0 24px 0;
+            font-weight: 700;
+        }
+
+        /* Column 1 Particulars */
+        .footer-logo-wrap {
+            margin-bottom: 20px;
+        }
+
+        .footer-brand-logo {
+            max-height: 44px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .footer-brand-moto {
+            font-size: 0.85rem;
+            color: var(--text-silver);
+            line-height: 1.6;
+        }
+
+        /* Column 2 Particulars (Get Info) */
+        .footer-cta-text {
+            font-size: 0.85rem;
+            color: var(--text-silver);
+            line-height: 1.6;
+            margin-bottom: 0px;
+        }
+
+        .footer-contact-links-wrap {
+            margin-top: 12px; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 8px;
+        }
+
+        .footer-inline-contact {
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.25s ease;
+            display: block;
+        }
+
+        .footer-inline-contact:hover {
+            color: var(--text-pure);
+        }
+
+        /* Column 3 Particulars */
+        .footer-nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-routing-link {
+            font-size: 0.85rem;
+            color: var(--text-silver);
+            text-decoration: none;
+            transition: color 0.25s ease;
+            font-weight: 500;
+        }
+
+        .footer-routing-link .nav-index {
+            color: rgba(255, 255, 255, 0.15);
+            margin-right: 6px;
+            font-size: 0.75rem;
+            transition: color 0.25s ease;
+        }
+
+        .footer-routing-link:hover {
+            color: var(--text-pure);
+        }
+
+        .footer-routing-link:hover .nav-index {
+            color: var(--accent-cyan);
+        }
+
+        /* Column 4 Particulars & Map Frame Responsive Wrap */
+        .footer-map-envelope {
+            border: 1px solid var(--border-gray);
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: rgba(17, 19, 21, 0.3);
+            line-height: 0;
+        }
+
+        .footer-map-envelope iframe {
+            filter: grayscale(1) invert(0.9) contrast(1.2);
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-map-envelope:hover iframe {
+            opacity: 0.95;
+        }
+
+        /* Lower Matrix Base Strip */
+        .footer-base-strip {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 30px;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        .ranking-geeks-anchor {
+            color: rgba(255, 255, 255, 0.4);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.25s ease;
+            position: relative;
+        }
+
+        .ranking-geeks-anchor:hover {
+            color: var(--accent-cyan);
+        }
+
+        /* --- STABLE WINDOW RESPONSIVE BREAKPOINTS --- */
+        @media (max-width: 1200px) {
+            .footer-container { padding: 0 24px; }
+        }
+
+        @media (max-width: 1024px) {
+            .footer-matrix-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .footer-matrix-grid {
+                grid-template-columns: 1fr;
+                gap: 36px;
+                padding-bottom: 40px;
+            }
+            .footer-block-heading {
+                margin-bottom: 16px;
+            }
+            .footer-base-strip {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+        }
+    </style>
